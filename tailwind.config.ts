@@ -13,7 +13,30 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        alexandria: ["Alexandria", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
+      },
       colors: {
+        // Design-specific colors
+        brand: {
+          50: "#faf8f5",
+          100: "#f4f0ea",
+          200: "#e8dccb",
+          300: "#d2b48c", // Light tan background
+          400: "#c4a373",
+          500: "#b5935a",
+          600: "#8b5e3c", // Primary brand color
+          700: "#6b4f3a", // Darker footer color
+          800: "#4a3426",
+          900: "#2d1f17",
+        },
+        text: {
+          primary: "#1c1c1c",
+          secondary: "rgba(28, 28, 28, 0.8)",
+          muted: "rgba(28, 28, 28, 0.7)",
+        },
+        // Keep existing shadcn colors for compatibility
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
